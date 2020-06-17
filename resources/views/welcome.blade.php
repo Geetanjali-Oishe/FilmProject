@@ -61,6 +61,37 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .btn {
+                display: inline-block;
+                margin-bottom: 0;
+                font-weight: 200;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                background-image: none;
+                border: 1px solid transparent;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                border-radius: 4px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                padding: 10px;
+            }
+
+
+            .btn-custom {
+                color: #fff !important;
+                background-color: #000000;
+                border-color: #000000;
+            }
+
         </style>
     </head>
     <body>
@@ -68,7 +99,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="/films">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -81,18 +112,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Films
+                    Welcome to Film Repository
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/films" role="button" class="btn btn-custom"> Go to films</a>
                 </div>
             </div>
         </div>
