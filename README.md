@@ -1,3 +1,25 @@
+
+This is a simple web application for storing information abot films.
+Functionalities:
+•	User can register and login providing his/her information.
+•	Logged in user can add new information about a film.
+•	Both Logged in and general user can view the list of films and their details information.
+•	Both Logged in and general user can view the comments on a film.
+•	Logged in user can also add comment about a film.
+
+How to use:
+A db seed has been created with random information about 6 films and few comments on each.
+•	Run the command "php artisan serve" to run the project.
+•	Run the command “php artisan db:seed” to run the seed file.
+
+
+At localhost http://127.0.0.1:8000/ the data can be viewed and all the functionalities can be used.
+
+
+
+
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
